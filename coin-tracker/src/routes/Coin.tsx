@@ -41,8 +41,8 @@ const Loader = styled.span`
 const Overview = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: ${(props) => props.theme.textColor};
-  color: ${(props) => props.theme.bgColor};
+  background-color: ${(props) => props.theme.boxColor};
+  color: ${(props) => props.theme.textColor};
   padding: 10px 20px;
   border-radius: 10px;
 `;
@@ -61,6 +61,7 @@ const OverviewItem = styled.div`
 const Description = styled.div`
   margin: 20px 20px;
   padding: 10px;
+  color: ${(props) => props.theme.desColor};
   border-left: 6px solid ${(props) => props.theme.accentColor};
 `;
 
@@ -76,8 +77,8 @@ const Tab = styled.span<{ $isActive: boolean }>`
   text-transform: uppercase;
   font-size: 12px;
   background-color: ${(props) =>
-    props.$isActive ? props.theme.accentColor : props.theme.textColor};
-  color: ${(props) => props.theme.bgColor};
+    props.$isActive ? props.theme.accentColor : props.theme.boxColor};
+  color: ${(props) => props.theme.textColor};
   padding: 10px 0px;
   border-radius: 10px;
   a {
@@ -89,7 +90,7 @@ const BackLink = styled.div`
   position: absolute;
   top: 5vh;
   left: 5vh;
-  color: ${(props) => props.theme.textColor};
+  color: ${(props) => props.theme.desColor};
   &:hover {
     a {
       color: ${(props) => props.theme.accentColor};

@@ -12,9 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider theme={lightTheme}>
-      <App />
-    </ThemeProvider>
+    <App />
   </QueryClientProvider>
 );
 
