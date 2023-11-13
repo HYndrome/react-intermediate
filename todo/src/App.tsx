@@ -3,8 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import ToDoList from "./ToDoList";
 
 const GlobalStyle = createGlobalStyle`
-  /* font */
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;600&display=swap');
+
   /* box-sizing border-box */
   * {
     box-sizing: border-box
